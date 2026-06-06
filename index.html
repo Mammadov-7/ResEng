@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ResEng — Reservoir Engineering Tools</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <img src="assets/tu-clausthal-logo.png" alt="TU Clausthal" class="logo" />
+    </div>
+    <div class="navbar-right">
+      <a href="#home" class="nav-link active">HOME</a>
+      <a href="#tools" class="nav-link">TOOLS</a>
+      <a href="#about" class="nav-link">ABOUT</a>
+      <a href="#contact" class="nav-link">CONTACT</a>
+    </div>
+  </nav>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <main class="container">
+
+    <!-- HERO -->
+    <section class="card hero">
+      <div class="hero-eyebrow">· WELCOME TO ·</div>
+      <h1 class="hero-title">ResEng</h1>
+      <div class="divider"></div>
+      <p class="hero-subtitle">Reservoir Engineering Tools · TU Clausthal</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="card" id="about">
+      <h2 class="card-title">· ABOUT</h2>
+      <div class="divider small"></div>
+      <p class="card-text">
+        <span class="highlight bold">ResEng</span> is a web application designed to
+        assist petroleum engineering students and researchers at
+        <span class="highlight">TU Clausthal</span> in performing reservoir
+        permeability calculations. Built upon
+        <span class="highlight">Darcy's Law</span> and industry-standard models,
+        the platform offers interactive tools for both single-phase and multi-phase
+        flow analysis, supporting academic learning and applied research alike.
+      </p>
+    </section>
+
+    <!-- ONE PHASE -->
+    <section class="card" id="one-phase">
+      <h2 class="card-title">· ONE PHASE</h2>
+      <div class="divider small"></div>
+      <p class="card-text">
+        Single-phase <span class="highlight">absolute permeability</span> calculator
+        based on Darcy's Law for linear and radial flow. Input known parameters —
+        pressure drop, flow rate, fluid viscosity, and core geometry — and solve
+        for any unknown variable. Ideal for laboratory core analysis, well testing,
+        and introductory reservoir characterization.
+      </p>
+      <a href="https://permeability-calculator-apf5qrg9nhcfqpnppaw4dq.streamlit.app/"
+         target="_blank"
+         class="btn btn-blue">
+        ☰ OPEN ONE PHASE
+      </a>
+    </section>
+
+    <!-- TWO PHASE -->
+    <section class="card" id="two-phase">
+      <h2 class="card-title">· TWO PHASE</h2>
+      <div class="divider small"></div>
+      <p class="card-text">
+        Two-phase <span class="highlight">relative permeability</span> calculator
+        for oil-water and gas-oil systems. Supports the
+        <span class="highlight">Corey</span>,
+        <span class="highlight">Brooks-Corey</span>, and
+        <span class="highlight">LET</span> models with adjustable saturation
+        endpoints and exponents. Generates relative permeability curves used in
+        reservoir simulation and recovery analysis.
+      </p>
+      <a href="#" class="btn btn-red">
+        ☰ OPEN TWO PHASE
+      </a>
+    </section>
+
+    <!-- STATS STRIP -->
+    <section class="card stats-strip">
+      <div class="stat">
+        <div class="stat-value">2</div>
+        <div class="stat-label">CALCULATORS</div>
+      </div>
+      <div class="stat stat-middle">
+        <div class="stat-value">3</div>
+        <div class="stat-label">PERM. MODELS</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">SI</div>
+        <div class="stat-label">&amp; FIELD UNITS</div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://www.instagram.com/tuclausthal/" target="_blank" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+          <path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.62c-3.15 0-3.5.01-4.74.07-1.07.05-1.65.23-2.04.38-.51.2-.88.44-1.26.82-.38.38-.62.75-.82 1.26-.15.39-.33.97-.38 2.04-.06 1.24-.07 1.59-.07 4.74s.01 3.5.07 4.74c.05 1.07.23 1.65.38 2.04.2.51.44.88.82 1.26.38.38.75.62 1.26.82.39.15.97.33 2.04.38 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c1.07-.05 1.65-.23 2.04-.38.51-.2.88-.44 1.26-.82.38-.38.62-.75.82-1.26.15-.39.33-.97.38-2.04.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.05-1.07-.23-1.65-.38-2.04a3.4 3.4 0 0 0-.82-1.26 3.4 3.4 0 0 0-1.26-.82c-.39-.15-.97-.33-2.04-.38-1.24-.06-1.59-.07-4.74-.07zm0 2.76a5.46 5.46 0 1 1 0 10.92 5.46 5.46 0 0 1 0-10.92zm0 9a3.54 3.54 0 1 0 0-7.08 3.54 3.54 0 0 0 0 7.08zm6.95-9.22a1.28 1.28 0 1 1-2.56 0 1.28 1.28 0 0 1 2.56 0z"/>
+        </svg>
+      </a>
+      <a href="https://www.facebook.com/TUClausthal/" target="_blank" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+          <path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.5-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12z"/>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/school/tu-clausthal/" target="_blank" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+          <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/>
+        </svg>
+      </a>
+    </div>
+    <p class="footer-text">© All Rights Reserved · TU Clausthal</p>
+    <p class="footer-version">ResEng version 1.0</p>
+  </footer>
+
+</body>
+</html>

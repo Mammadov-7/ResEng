@@ -70,12 +70,13 @@
       <div class="divider small"></div>
       <p class="card-text">
         Two-phase <span class="highlight">relative permeability</span> calculator
-        for oil-water and gas-oil systems. Supports the
-        <span class="highlight">Corey</span>,
-        <span class="highlight">Brooks-Corey</span>, and
-        <span class="highlight">LET</span> models with adjustable saturation
-        endpoints and exponents. Generates relative permeability curves used in
-        reservoir simulation and recovery analysis.
+        for gas–liquid and liquid–liquid systems. Forward mode runs a
+        <span class="highlight">1D IMPES</span> core-flood simulator using
+        <span class="highlight">Corey</span> kr and optional
+        <span class="highlight">Brooks–Corey</span> capillary pressure. Inverse
+        mode back-fits Corey parameters from measured ΔP(t) data via
+        <span class="highlight">Nelder–Mead</span> optimization. Generates kr
+        curves, saturation profiles, and history-match plots.
       </p>
       <a href="https://permeability-calculator-apf5qrg9nhcfqpnppaw4dq.streamlit.app/TwoPhase" class="btn btn-red">
         ☰ OPEN TWO PHASE
